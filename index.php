@@ -30,11 +30,10 @@
 		<form method="POST">
 			<input type="num" name="queen" placeholder="Minimum 4 Queens are required" />
 			<input type="submit" name="submit" />
-		</form>
+		</form><?php echo '<h1>'.$n.' X '.$n.'</h1>';?>
 		<div class="container">
 			<?php 
 			$size = (100/$n);
-			$boardSize = ($size);
 			for ($countParmutation = 0; $countParmutation < count($board); $countParmutation++) { 
 				echo '<div class="board">';
 				for($row = 0; $row < $n; $row++){
